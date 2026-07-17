@@ -167,3 +167,50 @@ nav{
 }
 
 }
+.products{
+    padding:70px 20px;
+    background:#0d0d0d;
+    text-align:center;
+}
+
+.products h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.product-card{
+    background:#1a1a1a;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:30px;
+    border:1px solid rgba(212,175,55,.4);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.product-card img{
+    width:100%;
+    display:block;
+}
+
+.product-card h3{
+    color:#d4af37;
+    margin:20px 0 10px;
+}
+
+.price{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.buy-btn{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 28px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
