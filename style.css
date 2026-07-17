@@ -1,16 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-padding:0;
-background:#F8F5F1;
-font-family:Arial,sans-serif;
-text-align:center;
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:#fff;
 }
 
-h1{
-margin-top:120px;
-font-size:42px;
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    z-index:100;
 }
 
-p{
-font-size:20px;
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:24px;
+    letter-spacing:3px;
 }
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:14px;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.overlay{
+    max-width:700px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 34px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+  }
