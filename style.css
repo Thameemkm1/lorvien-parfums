@@ -216,17 +216,18 @@ nav{
 }
 }
 .menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#fff;
-    cursor:pointer;
+    position:fixed;
+    top:25px;
+    right:25px;
+    z-index:2000;
+}
 }
 
 @media (max-width:768px){
 
 .menu-toggle{
     display:block;
-    z-index:1001;
+}
 }
 
 nav{
