@@ -1,3 +1,8 @@
+/* ==========================
+   LORVIEN PARFUMS
+   GLOBAL STYLES
+========================== */
+
 *{
     margin:0;
     padding:0;
@@ -9,116 +14,143 @@ html{
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#0d0d0d;
+    background:#000;
     color:#fff;
+    font-family:'Poppins',sans-serif;
     overflow-x:hidden;
+    line-height:1.7;
 }
 
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
     width:100%;
+    display:block;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:22px 8%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
-    padding:20px;
-    background:rgba(0,0,0,.35);
-    backdrop-filter:blur(12px);
+
     z-index:1000;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
 }
 
 .logo{
+
     font-family:'Cormorant Garamond',serif;
-    font-size:28px;
-    letter-spacing:3px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
 }
 
-nav{
-    display:flex;
-    gap:25px;
+.logo span{
+
+    display:block;
+
+    font-size:12px;
+
+    letter-spacing:8px;
+
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    transition:.3s;
-}
+.menu-btn{
 
-nav a:hover{
-    color:#d4af37;
-}
+    width:40px;
 
-.menu-toggle{
-    display:none;
-    font-size:30px;
     cursor:pointer;
+
 }
 
-.hero{
+.menu-btn span{
+
+    display:block;
+
+    height:2px;
+
+    background:#fff;
+
+    margin:8px 0;
+
+    transition:.4s;
+
+}
+
+/* ==========================
+FULL MENU
+========================== */
+
+.menu{
+
+    position:fixed;
+
+    top:-100%;
+
+    left:0;
+
+    width:100%;
+
     height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
-    url("https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
+
+    background:#000;
+
     display:flex;
+
+    flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
-    text-align:center;
-    padding:20px;
+
+    gap:35px;
+
+    transition:.5s;
+
+    z-index:999;
+
 }
 
-.overlay{
-    max-width:700px;
+.menu.active{
+
+    top:0;
+
 }
 
-.hero h1{
+.menu a{
+
+    font-size:28px;
+
     font-family:'Cormorant Garamond',serif;
-    font-size:64px;
-    margin-bottom:20px;
-}
 
-.hero p{
-    line-height:1.8;
-    margin-bottom:35px;
-}
+    letter-spacing:2px;
 
-.btn,
-.buy-btn{
-    display:inline-block;
-    background:#d4af37;
-    color:#000;
-    text-decoration:none;
-    padding:14px 34px;
-    border-radius:40px;
-    font-weight:600;
 }
-
-.collections,
-.products,
-.about,
-.contact{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.collections h2,
-.products h2,
-.about h2,
-.contact h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:42px;
-    margin-bottom:35px;
-}
-
-.cards{
-    display:grid;
-    gap:20px;
-}
-
-.card,
-.product-card{
-    background:#1b1b1b;
-    border:
