@@ -337,3 +337,94 @@ PRODUCTS
     font-weight:600;
 
 }
+/* ==========================
+SIGNATURE
+========================== */
+
+.signature{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:60px;
+    align-items:center;
+}
+
+.signature-text p:first-child{
+    color:#d4af37;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.signature-image img{
+    border-radius:12px;
+}
+
+/* ==========================
+ABOUT
+========================== */
+
+.about-text{
+    max-width:700px;
+    color:#bdbdbd;
+    font-size:18px;
+}
+
+/* ==========================
+CONTACT
+========================== */
+
+#contact p{
+    margin:12px 0;
+    color:#ccc;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+    padding:40px 8%;
+    border-top:1px solid #222;
+    text-align:center;
+    color:#888;
+    font-size:14px;
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .header{
+        padding:18px 6%;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .hero{
+        padding:0 6%;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .section{
+        padding:70px 6%;
+    }
+
+    .section h2{
+        font-size:36px;
+    }
+
+    .menu a{
+        font-size:24px;
+    }
+
+    .btn{
+        padding:14px 30px;
+    }
+}
