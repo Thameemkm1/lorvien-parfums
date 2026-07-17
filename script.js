@@ -1,12 +1,20 @@
-const menu = document.querySelector("nav");
-const toggle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
 
-toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
 
-    if(menu.classList.contains("active")){
-        toggle.innerHTML = "✕";
-    }else{
-        toggle.innerHTML = "☰";
+    if (nav.classList.contains("active")) {
+        menuToggle.textContent = "✕";
+    } else {
+        menuToggle.textContent = "☰";
     }
+});
+
+// Menu link അമർത്തുമ്പോൾ menu അടയ്ക്കുക
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        menuToggle.textContent = "☰";
+    });
 });
