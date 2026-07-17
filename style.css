@@ -134,3 +134,36 @@ nav a{
     color:#d9d9d9;
     line-height:1.7;
     }
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+.logo{
+    font-size:18px;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.btn{
+    padding:12px 28px;
+}
+
+}
