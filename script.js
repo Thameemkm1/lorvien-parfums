@@ -1,17 +1,13 @@
 const menu = document.querySelector("nav");
 const toggle = document.querySelector(".menu-toggle");
 
-toggle.addEventListener("click", () => {
+menu.style.display = "none";
 
-    if(menu.style.display === "flex"){
-
-        menu.style.display = "none";
-
-    }else{
-
-        menu.style.display = "flex";
-        menu.style.flexDirection = "column";
-
-    }
-
-});
+toggle.onclick = function () {
+  if (menu.style.display === "none") {
+    menu.style.display = "flex";
+    menu.style.flexDirection = "column";
+  } else {
+    menu.style.display = "none";
+  }
+};
