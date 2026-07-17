@@ -1,151 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorvien Parfums</title>
 
-<title>Lorvien Parfums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
+<header class="header">
 
-<div class="logo">
-LORVIEN PARFUMS
-</div>
+    <a href="#" class="logo">
+        LORVIEN
+        <span>PARFUMS</span>
+    </a>
 
-<div class="menu-toggle">
-☰
-</div>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#collections">Collections</a>
-
-<a href="#bestsellers">Best Sellers</a>
-
-<a href="#about">About</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
+    <div class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+    </div>
 
 </header>
 
-<section class="hero" id="home">
+<nav class="menu" id="menu">
 
-<div class="overlay">
+    <a href="#">Home</a>
+    <a href="#new">New Arrivals</a>
+    <a href="#signature">Signature</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
 
-<h1>Luxury Fragrances</h1>
+</nav>
 
-<p>
-Inspired by timeless elegance and crafted for unforgettable moments.
-</p>
+<section class="hero">
 
-<a href="#collections" class="btn">
-Explore Collection
-</a>
+    <div class="hero-content">
 
-</div>
+        <p class="small-title">
+            Luxury Fragrance House
+        </p>
 
-</section>
+        <h1>
 
-<section id="collections" class="collections">
+            Crafted<br>
+            Beyond<br>
+            Ordinary
 
-<h2>Collections</h2>
+        </h1>
 
-<div class="cards">
+        <p>
 
-<div class="card">
-<h3>Men</h3>
-<p>Bold, woody and masculine fragrances.</p>
-</div>
+            Discover timeless perfumes created for
+            those who appreciate elegance and character.
 
-<div class="card">
-<h3>Women</h3>
-<p>Elegant floral and luxurious perfumes.</p>
-</div>
+        </p>
 
-<div class="card">
-<h3>Unisex</h3>
-<p>Modern scents crafted for everyone.</p>
-</div>
+        <a href="#new" class="btn">
 
-</div>
+            Explore Collection
 
-</section>
+        </a>
 
-<section id="bestsellers" class="products">
-
-<h2>Best Sellers</h2>
-
-<div class="product-card">
-
-<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80">
-
-<h3>Lorvien Noir</h3>
-
-<div class="price">
-₹1,499
-</div>
-
-<a href="#" class="buy-btn">
-View Details
-</a>
-
-</div>
-
-<div class="product-card">
-
-<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80">
-
-<h3>Lorvien Gold</h3>
-
-<div class="price">
-₹1,799
-</div>
-
-<a href="#" class="buy-btn">
-View Details
-</a>
-
-</div>
+    </div>
 
 </section>
 
-<section id="about" class="about">
+<section class="section" id="new">
 
-<h2>About Lorvien</h2>
+    <h2>New Arrivals</h2>
 
-<p>
+    <div class="products">
+              <div class="product-card">
 
-Lorvien Parfums creates luxury-inspired fragrances designed for everyday elegance. Every bottle is crafted to deliver premium quality and timeless sophistication.
+            <img src="assets/images/perfume1.jpg" alt="Noir Essence">
 
-</p>
+            <h3>Noir Essence</h3>
+
+            <p>Woody • Amber • Vanilla</p>
+
+            <span>₹2,499</span>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="assets/images/perfume2.jpg" alt="Velvet Bloom">
+
+            <h3>Velvet Bloom</h3>
+
+            <p>Rose • Jasmine • Musk</p>
+
+            <span>₹2,699</span>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="assets/images/perfume3.jpg" alt="Golden Oud">
+
+            <h3>Golden Oud</h3>
+
+            <p>Oud • Saffron • Sandalwood</p>
+
+            <span>₹3,199</span>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section id="contact" class="contact">
+<section class="section signature" id="signature">
 
-<h2>Contact</h2>
+    <div class="signature-text">
 
-<a href="#" class="btn">
-WhatsApp Us
-</a>
+        <p>Signature Collection</p>
+
+        <h2>Luxury in Every Drop</h2>
+
+        <p>
+            Every Lorvien fragrance is crafted with carefully selected
+            ingredients to create a memorable experience that lasts.
+        </p>
+
+        <a href="#" class="btn">
+            View Collection
+        </a>
+
+    </div>
+
+    <div class="signature-image">
+
+        <img src="assets/images/signature.jpg"
+             alt="Lorvien Signature">
+
+    </div>
+
+</section>
+
+<section class="section" id="about">
+
+    <h2>About Lorvien</h2>
+
+    <p class="about-text">
+
+        Lorvien Parfums represents modern luxury through elegant,
+        long-lasting fragrances inspired by timeless sophistication.
+
+    </p>
+
+</section>
+
+<section class="section" id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email : hello@lorvienparfums.com</p>
+
+    <p>Instagram : @lorvienparfums</p>
+
+    <p>WhatsApp : +91 XXXXX XXXXX</p>
 
 </section>
 
 <footer>
 
-© 2026 Lorvien Parfums
+    <p>
+
+        © 2026 Lorvien Parfums.
+        All Rights Reserved.
+
+    </p>
 
 </footer>
 
