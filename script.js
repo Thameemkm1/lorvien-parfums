@@ -1,13 +1,14 @@
 const menu = document.querySelector("nav");
 const toggle = document.querySelector(".menu-toggle");
 
-menu.style.display = "none";
+toggle.addEventListener("click", function () {
 
-toggle.onclick = function () {
-  if (menu.style.display === "none") {
+  if (window.getComputedStyle(menu).display === "none") {
     menu.style.display = "flex";
     menu.style.flexDirection = "column";
+    menu.style.alignItems = "center";
   } else {
     menu.style.display = "none";
   }
-};
+
+});
