@@ -73,3 +73,38 @@ nav a{
     border-radius:40px;
     font-weight:bold;
   }
+.collections{
+    background:#111;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.collections h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.collection-grid{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.card{
+    background:#1a1a1a;
+    border:1px solid #d4af37;
+    border-radius:18px;
+    padding:30px 20px;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.card p{
+    color:#ddd;
+    line-height:1.7;
+}
