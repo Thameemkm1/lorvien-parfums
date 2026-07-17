@@ -428,3 +428,36 @@ MOBILE
         padding:14px 30px;
     }
 }
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("assets/images/hero.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    line-height:1;
+    margin:20px 0;
+}
+
+.hero p{
+    color:#ddd;
+}
+
+.small-title{
+    color:#d4af37;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
