@@ -383,7 +383,7 @@ FOOTER
 ========================== */
 
 footer{
-    padding:40px 8%;
+    padding:50px 8%;
     border-top:1px solid #222;
     text-align:center;
     color:#888;
@@ -568,4 +568,32 @@ PREMIUM PRODUCT CARDS
 .view-btn:hover{
     background:#d4af37;
     color:#000;
+}
+/* ==========================
+PREMIUM FOOTER
+========================== */
+
+.footer-content{
+    max-width:600px;
+    margin:auto;
+}
+
+.footer-content h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    letter-spacing:8px;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    color:#bdbdbd;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.footer-content span{
+    color:#777;
+    font-size:14px;
 }
