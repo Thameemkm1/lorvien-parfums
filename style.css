@@ -226,11 +226,24 @@ nav{
 
 .menu-toggle{
     display:block;
+    z-index:1000;
+    margin-top:10px;
+}
 }
 
 nav{
     display:none;
+    position:absolute;
+    top:90px;
+    left:0;
     width:100%;
+    background:rgba(0,0,0,.95);
+    padding:20px 0;
 }
 
+nav a{
+    display:block;
+    text-align:center;
+    margin:15px 0;
+}
 }
