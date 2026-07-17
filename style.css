@@ -154,3 +154,186 @@ FULL MENU
     letter-spacing:2px;
 
 }
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:url("assets/images/hero.jpg") center/cover no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:600px;
+
+}
+
+.small-title{
+
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+    color:#d4af37;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    line-height:0.95;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:480px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================
+BUTTON
+========================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 38px;
+
+    border:1px solid #d4af37;
+
+    color:#d4af37;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    background:#d4af37;
+
+    color:#000;
+
+}
+
+/* ==========================
+SECTIONS
+========================== */
+
+.section{
+
+    padding:100px 8%;
+
+}
+
+.section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:48px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================
+PRODUCTS
+========================== */
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+.product-card{
+
+    background:#111;
+
+    padding:20px;
+
+    transition:.35s;
+
+    border:1px solid #222;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+}
+
+.product-card h3{
+
+    margin-top:18px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+}
+
+.product-card p{
+
+    color:#aaa;
+
+    margin:10px 0;
+
+}
+
+.product-card span{
+
+    color:#d4af37;
+
+    font-weight:600;
+
+}
