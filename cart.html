@@ -108,7 +108,7 @@ function minus() {
 
 <div class="row">
 <strong>Total</strong>
-<strong class="price">₹499</strong>
+<strong class="price" id="total">₹499</strong>
 </div>
 
 <a href="checkout.html" class="btn">
@@ -118,6 +118,37 @@ Proceed to Checkout
 </div>
 
 </div>
+<a href="checkout.html" class="btn">
+Proceed to Checkout
+</a>
 
+</div>
+
+</div>
+
+<script>
+let quantity = 1;
+const price = 499;
+
+function updateTotal() {
+    document.getElementById("qty").innerText = quantity;
+    document.getElementById("total").innerText = "₹" + (quantity * price);
+}
+
+function plus() {
+    quantity++;
+    updateTotal();
+}
+
+function minus() {
+    if (quantity > 1) {
+        quantity--;
+        updateTotal();
+    }
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
