@@ -88,6 +88,11 @@ Place Order
 </div>
 
 <script>
+    let qty = localStorage.getItem("cartQty") || 1;
+let total = localStorage.getItem("cartTotal") || 499;
+
+document.getElementById("qty").innerText = qty;
+document.getElementById("total").innerText = total;
 function placeOrder(){
 
 let name=document.getElementById("name").value;
