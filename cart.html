@@ -6,17 +6,7 @@
 <title>Shopping Cart - Lorvien Parfums</title>
 
 <link rel="stylesheet" href="style.css">
-.remove-btn{
-    width:100%;
-    margin-top:20px;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#8b0000;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-}
+
 <style>
 body{
     background:#0d0d0d;
@@ -24,89 +14,67 @@ body{
     font-family:Arial,sans-serif;
     margin:0;
 }
-
 .container{
     max-width:500px;
     margin:auto;
     padding:20px;
 }
-
+h1{
+    text-align:center;
+}
 .cart-box{
     background:#1b1b1b;
     padding:20px;
     border-radius:12px;
 }
-
-h1{
-    text-align:center;
-}
-
 .row{
     display:flex;
     justify-content:space-between;
-    margin:15px 0;
+    align-items:center;
 }
-
 .price{
     color:#d4af37;
-    font-size:24px;
+    font-size:32px;
     font-weight:bold;
 }
-
 .btn{
     display:block;
     width:100%;
     text-align:center;
+    padding:15px;
+    margin-top:25px;
     background:#d4af37;
     color:#000;
-    padding:15px;
     text-decoration:none;
-    border-radius:8px;
+    border-radius:10px;
     font-weight:bold;
-    margin-top:25px;
 }
-    <script>
-let quantity = 1;
-let price = 499;
-
-function updateTotal() {
-    document.getElementById("qty").innerText = quantity;
-    document.getElementById("total").innerText = "₹" + (quantity * price);
+.qty{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
-
-function plus() {
-    quantity++;
-    updateTotal();
+.qty-btn{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
 }
-
-function minus() {
-    if (quantity > 1) {
-        quantity--;
-        updateTotal();
-    }
+.remove-btn{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#8b0000;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
 }
-    function removeItem(){
-
-    if(confirm("Remove this product from cart?")){
-
-        document.querySelector(".cart-box").innerHTML = `
-        <h2 style="text-align:center;">🛒</h2>
-
-        <h3 style="text-align:center;">
-        Your cart is empty
-        </h3>
-
-        <a href="index.html" class="btn">
-        Continue Shopping
-        </a>
-        `;
-    }
-
-        }
-</script>
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
@@ -131,14 +99,20 @@ function minus() {
 </div>
 
 </div>
+
 <button class="remove-btn" onclick="removeItem()">
 🗑 Remove Item
 </button>
+
 <hr>
 
 <div class="row">
 <strong>Total</strong>
-<strong class="price" id="total">₹499</strong>
+
+<div class="price">
+₹<span id="total">499</span>
+</div>
+
 </div>
 
 <a href="checkout.html" class="btn">
@@ -147,34 +121,47 @@ Proceed to Checkout
 
 </div>
 
-
 </div>
-
-</div>
-
 <script>
 let quantity = 1;
 const price = 499;
 
-function updateTotal() {
+function updateTotal(){
     document.getElementById("qty").innerText = quantity;
-    document.getElementById("total").innerText = "₹" + (quantity * price);
+    document.getElementById("total").innerText = quantity * price;
 }
 
-function plus() {
+function plus(){
     quantity++;
     updateTotal();
 }
 
-function minus() {
-    if (quantity > 1) {
+function minus(){
+    if(quantity > 1){
         quantity--;
         updateTotal();
     }
 }
+
+function removeItem(){
+
+    if(confirm("Remove this product from cart?")){
+
+        document.querySelector(".cart-box").innerHTML = `
+        <h2 style="text-align:center;">🛒</h2>
+
+        <h3 style="text-align:center;">
+        Your cart is empty
+        </h3>
+
+        <a href="index.html" class="btn">
+        Continue Shopping
+        </a>
+        `;
+    }
+
+}
 </script>
 
-</body>
-</html>
 </body>
 </html>
