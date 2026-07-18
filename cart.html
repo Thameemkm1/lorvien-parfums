@@ -125,10 +125,13 @@ Proceed to Checkout
 <script>
 let quantity = 1;
 const price = 499;
-
+updateTotal();
 function updateTotal(){
     document.getElementById("qty").innerText = quantity;
     document.getElementById("total").innerText = quantity * price;
+
+    localStorage.setItem("cartQty", quantity);
+    localStorage.setItem("cartTotal", quantity * price);
 }
 
 function plus(){
