@@ -289,3 +289,48 @@ footer{
 }
 
 }
+/* =========================
+   FINAL POLISH
+========================= */
+
+.hero-btn,
+.menu a,
+.product-slide img{
+    transition:all .3s ease;
+}
+
+.hero-btn:hover{
+    transform:translateY(-2px);
+}
+
+.product-slide{
+    scroll-snap-stop:always;
+}
+
+.collection{
+    gap:0;
+}
+
+.product-slide:nth-child(1){
+    background:#ffffff;
+}
+
+.product-slide:nth-child(2){
+    background:#fafafa;
+}
+
+.product-slide:nth-child(3){
+    background:#f5f5f5;
+}
+
+@media (max-width:768px){
+
+.hero{
+    padding-top:110px;
+}
+
+.collection{
+    scroll-padding-left:0;
+}
+
+}
