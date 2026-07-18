@@ -121,8 +121,54 @@ Buy Now
 
 </div>
 <script>
+const params = new URLSearchParams(window.location.search);
+const product = params.get("product") || "noir";
+
+const products = {
+  noir: {
+    name: "Noir Essence",
+    image: "assets/images/perfume1.png",
+    desc: "A premium long-lasting fragrance with woody, amber and vanilla notes. Perfect for everyday confidence and special occasions.",
+    notes: `
+      <li>Top: Bergamot, Lemon</li>
+      <li>Heart: Lavender, Jasmine</li>
+      <li>Base: Sandalwood, Musk, Amber</li>
+    `
+  },
+
+  oud: {
+    name: "Golden Oud",
+    image: "assets/images/perfume3.jpg",
+    desc: "A rich oud fragrance blended with saffron and sandalwood for a luxurious experience.",
+    notes: `
+      <li>Top: Saffron</li>
+      <li>Heart: Oud</li>
+      <li>Base: Sandalwood</li>
+    `
+  },
+
+  velvet: {
+    name: "Velvet Bloom",
+    image: "assets/images/perfume2.jpg",
+    desc: "A soft floral fragrance with rose, jasmine and musk.",
+    notes: `
+      <li>Top: Rose</li>
+      <li>Heart: Jasmine</li>
+      <li>Base: Musk</li>
+    `
+  }
+};
+
+const p = products[product];
+
+document.getElementById("productImage").src = p.image;
+document.getElementById("productImage").alt = p.name;
+document.getElementById("productTitle").innerText = p.name;
+document.getElementById("productDesc").innerText = p.desc;
+document.getElementById("productNotes").innerHTML = p.notes;
+
 function saveProduct(){
-    localStorage.setItem("productName", "Noir Essence");
+    localStorage.setItem("productName", p.name);
 }
 </script>
 </body>
