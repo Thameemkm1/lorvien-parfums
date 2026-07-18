@@ -85,6 +85,24 @@ function minus() {
         updateTotal();
     }
 }
+    function removeItem(){
+
+    if(confirm("Remove this product from cart?")){
+
+        document.querySelector(".cart-box").innerHTML = `
+        <h2 style="text-align:center;">🛒</h2>
+
+        <h3 style="text-align:center;">
+        Your cart is empty
+        </h3>
+
+        <a href="index.html" class="btn">
+        Continue Shopping
+        </a>
+        `;
+    }
+
+        }
 </script>
 </style>
 
