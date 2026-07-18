@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product - Lorvien Parfums</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    background:#0d0d0d;
+    color:#fff;
+    font-family:Poppins,sans-serif;
+    margin:0;
+}
+
+.product-page{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+}
+
+.product-page img{
+    width:100%;
+    border-radius:15px;
+}
+
+.price{
+    font-size:30px;
+    color:#d4af37;
+    font-weight:bold;
+}
+
+.desc{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.qty{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:25px 0;
+}
+
+.qty button{
+    width:40px;
+    height:40px;
+    font-size:20px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.cart{
+    background:#d4af37;
+    color:#000;
+}
+
+.buy{
+    background:#fff;
+    color:#000;
+}
+</style>
+
+</head>
+<body>
+
+<div class="product-page">
+
+<img src="assets/images/perfume1.png" alt="Noir Essence">
+
+<h1>Noir Essence</h1>
+
+<p class="price">₹499</p>
+
+<p><strong>Size:</strong> 50 ML</p>
+
+<p class="desc">
+A premium long-lasting fragrance with woody, amber and vanilla notes.
+Perfect for everyday confidence and special occasions.
+</p>
+
+<h3>Fragrance Notes</h3>
+
+<ul>
+<li>Top: Bergamot, Lemon</li>
+<li>Heart: Lavender, Jasmine</li>
+<li>Base: Sandalwood, Musk, Amber</li>
+</ul>
+
+<div class="qty">
+<button>-</button>
+
+<span>1</span>
+
+<button>+</button>
+</div>
+
+<a href="#" class="btn cart">Add to Cart</a>
+
+<a href="#" class="btn buy">Buy Now</a>
+
+<p style="margin-top:30px;color:#aaa;">
+🚚 Delivery: 3–7 Days<br>
+💳 Payment: Prepaid Only
+</p>
+
+</div>
+
+</body>
+</html>
