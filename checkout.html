@@ -96,11 +96,13 @@ let address=document.getElementById("address").value;
 let landmark=document.getElementById("landmark").value;
 let city=document.getElementById("city").value;
 let pin=document.getElementById("pincode").value;
-
+let qty = document.getElementById("qty").innerText;
+let total = document.getElementById("total").innerText;
 let msg=`🛍️ *New Order - Lorvien Parfums*
 
 Product: Noir Essence
-Price: ₹499
+Quantity: ${qty}
+Total: ₹${total}
 
 Name: ${name}
 Phone: ${phone}
