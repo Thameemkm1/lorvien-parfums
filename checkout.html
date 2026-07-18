@@ -58,7 +58,7 @@ input,textarea{
 
 <h3>Order Summary</h3>
 
-<p><strong>Product:</strong> Noir Essence</p>
+<p><strong>Product:</strong> <span id="productName">Noir Essence</span></p>
 
 <p><strong>Quantity:</strong> <span id="qty">1</span></p>
 
@@ -93,6 +93,8 @@ let total = localStorage.getItem("cartTotal") || 499;
 
 document.getElementById("qty").innerText = qty;
 document.getElementById("total").innerText = total;
+    let product = localStorage.getItem("productName") || "Noir Essence";
+document.getElementById("productName").innerText = product;
 function placeOrder(){
 
 let name=document.getElementById("name").value;
@@ -105,7 +107,7 @@ let qty = document.getElementById("qty").innerText;
 let total = document.getElementById("total").innerText;
 let msg=`🛍️ *New Order - Lorvien Parfums*
 
-Product: Noir Essence
+Product: ${product}
 Quantity: ${qty}
 Total: ₹${total}
 
