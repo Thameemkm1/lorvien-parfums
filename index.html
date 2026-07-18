@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lorvien Parfums</title>
+    <title>Lorvien Parfums</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -20,174 +21,112 @@
 
 <header class="header">
 
-<a href="index.html" class="logo">
-LORVIEN
-<span>PARFUMS</span>
-</a>
+    <a href="index.html" class="logo">
+        LORVIEN
+        <span>PARFUMS</span>
+    </a>
 
-<div class="menu-btn" id="menuBtn">
-<span></span>
-<span></span>
-</div>
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
 
 </header>
 
 <nav class="menu" id="menu">
 
-<a href="#">Home</a>
-<a href="#collection">Collection</a>
-<a href="#about">About</a>
-<a href="cart.html">Cart</a>
+    <a href="index.html">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+    <a href="cart.html">Cart</a>
 
 </nav>
 
 <section class="hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<p class="hero-subtitle">
-Luxury Fragrance Collection
-</p>
+        <p class="hero-subtitle">
+            Luxury Fragrance
+        </p>
 
-<h1>
-Crafted For<br>
-Everyday Confidence
-</h1>
+        <h1>
+            Crafted For<br>
+            Everyday Confidence
+        </h1>
 
-<p class="hero-description">
+        <p class="hero-description">
+            Premium-inspired fragrances designed for everyday luxury.
+        </p>
 
-Elegant fragrances inspired by luxury,
-made for everyday wear.
+        <a href="#collection" class="hero-btn">
+            Explore Collection
+        </a>
 
-</p>
+    </div>
 
-<a href="#collection" class="hero-btn">
-Explore Collection
-</a>
+    <div class="hero-image">
+
+        <img src="assets/images/perfume1.png"
+             alt="Lorvien Perfume">
+
+    </div>
+
+</section>
+
+<section id="collection" class="collection">
+  <h2 class="section-title">Our Collection</h2>
+
+<div class="product-slider">
+
+    <div class="product-track">
+
+        <!-- Noir -->
+        <div class="product-card">
+
+            <img src="assets/images/noir.png" alt="Noir Essence">
+
+            <h3>Noir Essence</h3>
+
+            <p class="price">₹499</p>
+
+            <a href="product.html?product=noir" class="product-btn">
+                View Details
+            </a>
+
+        </div>
+
+        <!-- Oud -->
+        <div class="product-card">
+
+            <img src="assets/images/oud.png" alt="Royal Oud">
+
+            <h3>Royal Oud</h3>
+
+            <p class="price">₹499</p>
+
+            <a href="product.html?product=oud" class="product-btn">
+                View Details
+            </a>
+
+        </div>
+
+        <!-- Velvet -->
+        <div class="product-card">
+
+            <img src="assets/images/velvet.png" alt="Velvet Bloom">
+
+            <h3>Velvet Bloom</h3>
+
+            <p class="price">₹499</p>
+
+            <a href="product.html?product=velvet" class="product-btn">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
 </section>
-
-<section
-id="collection"
-class="collection">
-
-<div class="product-slide">
-
-<img
-src="assets/images/perfume1.png"
-alt="Noir Essence">
-
-<h2>Noir Essence</h2>
-
-<p>
-Woody • Amber • Vanilla
-</p>
-
-<span>₹499</span>
-
-<a
-href="product.html?product=noir"
-class="hero-btn">
-
-Explore
-
-</a>
-
-</div>
-
-<div class="product-slide">
-
-<img
-src="assets/images/perfume3.jpg"
-alt="Golden Oud">
-
-<h2>Golden Oud</h2>
-
-<p>
-Oud • Saffron • Sandalwood
-</p>
-
-<span>₹499</span>
-
-<a
-href="product.html?product=oud"
-class="hero-btn">
-
-Explore
-
-</a>
-
-</div>
-<div class="product-slide">
-
-<img
-src="assets/images/perfume2.jpg"
-alt="Velvet Bloom">
-
-<h2>Velvet Bloom</h2>
-
-<p>
-Rose • Jasmine • Musk
-</p>
-
-<span>₹499</span>
-
-<a
-href="product.html?product=velvet"
-class="hero-btn">
-
-Explore
-
-</a>
-
-</div>
-
-</section>
-
-<section id="about" class="section">
-
-<h2>About Lorvien</h2>
-
-<p class="about-text">
-
-Lorvien Parfums creates premium-quality
-fragrances inspired by luxury brands.
-Designed for long-lasting performance,
-crafted for everyday confidence.
-
-</p>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<h3>LORVIEN</h3>
-
-<p>
-Premium-inspired fragrances.
-</p>
-
-<p>
-WhatsApp Orders:
-+91 79940 08075
-</p>
-
-<span>
-
-© 2026 Lorvien Parfums.
-All Rights Reserved.
-
-</span>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
