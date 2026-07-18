@@ -45,7 +45,7 @@ body{
     text-decoration:none;
     color:#111;
     font-family:'Cormorant Garamond',serif;
-    font-size:42px;
+    font-size:36px;
     letter-spacing:10px;
     text-align:center;
 }
@@ -61,15 +61,12 @@ body{
 /* ========= MENU ========= */
 
 .menu-btn{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
     width:34px;
     cursor:pointer;
-}
-
-.menu-btn span{
-    display:block;
-    height:2px;
-    background:#111;
-    margin:8px 0;
 }
 
 .menu{
