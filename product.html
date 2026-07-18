@@ -106,9 +106,13 @@ Perfect for everyday confidence and special occasions.
 <button>+</button>
 </div>
 
-<a href="cart.html" class="btn cart">Add to Cart</a>
+<a href="cart.html" class="btn cart" onclick="saveProduct()">
+Add to Cart
+</a>
 
-    <a href="checkout.html" class="btn buy">Buy Now</a>
+    <a href="checkout.html" class="btn buy" onclick="saveProduct()">
+Buy Now
+    </a>
 
 <p style="margin-top:30px;color:#aaa;">
 🚚 Delivery: 3–7 Days<br>
@@ -116,6 +120,10 @@ Perfect for everyday confidence and special occasions.
 </p>
 
 </div>
-
+<script>
+function saveProduct(){
+    localStorage.setItem("productName", "Noir Essence");
+}
+</script>
 </body>
 </html>
