@@ -1,5 +1,5 @@
 /* =====================================
-   LORVIEN v2
+   LORVIEN v3
 ===================================== */
 
 *{
@@ -13,9 +13,9 @@ html{
 }
 
 body{
-    background:#ffffff;
-    color:#111;
     font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#111;
     overflow-x:hidden;
 }
 
@@ -29,17 +29,16 @@ body{
     height:80px;
     background:#fff;
     border-bottom:1px solid #eee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     z-index:1000;
 }
 
 .logo{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
     text-decoration:none;
-    text-align:center;
     color:#111;
+    text-align:center;
     font-family:'Cormorant Garamond',serif;
     font-size:34px;
     letter-spacing:8px;
@@ -50,24 +49,18 @@ body{
     font-size:11px;
     letter-spacing:6px;
     color:#777;
-    margin-top:3px;
 }
 
 .menu-btn{
     position:absolute;
     right:20px;
-    top:50%;
-    transform:translateY(-50%);
-    width:32px;
+    background:none;
+    border:none;
+    font-size:28px;
     cursor:pointer;
 }
 
-.menu-btn span{
-    display:block;
-    height:2px;
-    background:#111;
-    margin:7px 0;
-}
+/* MENU */
 
 .menu{
     position:fixed;
@@ -78,6 +71,7 @@ body{
     display:none;
     flex-direction:column;
     border-bottom:1px solid #eee;
+    z-index:999;
 }
 
 .menu.active{
@@ -94,172 +88,216 @@ body{
 /* HERO */
 
 .hero{
-    min-height:85vh;
+    padding:120px 24px 80px;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
     text-align:center;
-    padding:90px 24px 40px;
-}
-
-.hero-content{
-    max-width:700px;
 }
 
 .hero-subtitle{
-    letter-spacing:4px;
     text-transform:uppercase;
-    font-size:12px;
+    letter-spacing:4px;
     color:#777;
+    font-size:12px;
     margin-bottom:20px;
 }
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
-    font-size:58px;
-    line-height:1.05;
-    margin-bottom:24px;
+    font-size:56px;
+    line-height:1.1;
+    margin-bottom:20px;
 }
 
-.hero-description{
+.hero p{
     color:#666;
+    max-width:500px;
     line-height:1.8;
-    margin-bottom:35px;
+}
+
+.hero-image img{
+    width:280px;
+    max-width:90%;
+    margin:50px 0;
 }
 
 .hero-btn{
     display:inline-block;
-    padding:15
-   /* =====================================
+    margin-top:30px;
+    padding:15px 34px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:999px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#333;
+}
+
+/* =====================================
    COLLECTION
 ===================================== */
 
 .collection{
-    display:flex;
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-    -webkit-overflow-scrolling:touch;
-    scroll-behavior:smooth;
+    padding:80px 20px;
 }
 
-.collection::-webkit-scrollbar{
+.section-title{
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:44px;
+    margin-bottom:40px;
+}
+
+.product-slider{
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+}
+
+.product-slider::-webkit-scrollbar{
     display:none;
 }
 
-.product-slide{
-    flex:0 0 100%;
-    min-height:100vh;
-
+.product-track{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    gap:24px;
+    padding-bottom:10px;
+}
 
+.product-card{
+    min-width:280px;
+    flex-shrink:0;
+    background:#fafafa;
+    border:1px solid #eee;
+    border-radius:24px;
+    padding:30px 20px;
     text-align:center;
-
-    scroll-snap-align:start;
-
-    padding:40px 24px;
+    transition:.3s;
 }
 
-.product-slide img{
-    width:240px;
-    max-width:80%;
-    margin-bottom:40px;
-    transition:.35s;
+.product-card:hover{
+    transform:translateY(-6px);
 }
 
-.product-slide img:hover{
-    transform:scale(1.05);
+.product-card img{
+    width:170px;
+    margin-bottom:20px;
 }
 
-.product-slide h2{
+.product-card h3{
     font-family:'Cormorant Garamond',serif;
-    font-size:44px;
-    margin-bottom:12px;
+    font-size:32px;
+    margin-bottom:10px;
 }
 
-.product-slide p{
+.tagline{
     color:#666;
     margin-bottom:18px;
 }
 
-.product-slide span{
-    display:block;
-    font-size:28px;
+.price{
+    font-size:24px;
     font-weight:600;
-    margin-bottom:28px;
+    margin-bottom:22px;
 }
 
-/* ABOUT */
+.product-btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:999px;
+}
 
-.section{
+/* =====================================
+   ABOUT
+===================================== */
+
+.about{
     padding:100px 24px;
 }
 
-.section h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:42px;
-    text-align:center;
-    margin-bottom:24px;
-}
-
-.about-text{
+.about-content{
     max-width:700px;
     margin:auto;
     text-align:center;
-    line-height:1.8;
+}
+
+.about h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:44px;
+    margin-bottom:20px;
+}
+
+.about p{
     color:#666;
+    line-height:1.9;
 }
 
-/* FOOTER */
+/* =====================================
+   FOOTER
+===================================== */
 
-footer{
-    padding:60px 24px;
-    text-align:center;
+.footer{
+    padding:70px 24px;
     border-top:1px solid #eee;
+    text-align:center;
 }
 
-.footer-content h3{
+.footer h3{
     font-family:'Cormorant Garamond',serif;
     font-size:34px;
     letter-spacing:6px;
     margin-bottom:15px;
 }
 
-.footer-content p{
+.footer p{
     color:#666;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
-.footer-content span{
-    color:#999;
+.copyright{
+    margin-top:30px;
     font-size:14px;
+    color:#999;
 }
 
-/* MOBILE */
+/* =====================================
+   MOBILE
+===================================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.hero h1{
-    font-size:42px;
-}
+    .logo{
+        font-size:28px;
+        letter-spacing:6px;
+    }
 
-.product-slide img{
-    width:200px;
-}
+    .hero h1{
+        font-size:42px;
+    }
 
-.product-slide h2{
-    font-size:34px;
-}
+    .hero-image img{
+        width:220px;
+    }
 
-.section h2{
-    font-size:34px;
-}
+    .section-title,
+    .about h2{
+        font-size:34px;
+    }
 
-.logo{
-    font-size:28px;
-    letter-spacing:6px;
-}
+    .product-card{
+        min-width:240px;
+    }
+
+    .product-card img{
+        width:150px;
+    }
 
 }
