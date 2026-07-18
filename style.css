@@ -147,7 +147,37 @@ body{
 
     display:flex;
     flex-direction:column;
-    justify-content:center
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    scroll-snap-align:start;
+
+    padding:40px;
+}
+
+.product-slide img{
+    width:280px;
+    max-width:85%;
+    margin-bottom:40px;
+}
+
+.product-slide h2{
+    font-size:42px;
+    font-weight:300;
+    margin-bottom:10px;
+}
+
+.product-slide p{
+    color:#666;
+    margin-bottom:18px;
+}
+
+.product-slide span{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:30px;
+}
 /* PRODUCT ANIMATIONS */
 
 .product-slide{
