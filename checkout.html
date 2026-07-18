@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Lorvien Parfums</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    background:#0d0d0d;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    margin:0;
+}
+.container{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+}
+h1{
+    text-align:center;
+}
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+.btn{
+    width:100%;
+    padding:15px;
+    background:#d4af37;
+    color:#000;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.note{
+    color:#d4af37;
+    text-align:center;
+    margin:20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Checkout</h1>
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="tel" id="phone" placeholder="Mobile Number">
+
+<textarea id="address" placeholder="House Name / Address"></textarea>
+
+<input type="text" id="landmark" placeholder="Landmark">
+
+<input type="text" id="city" placeholder="City">
+
+<input type="text" id="pincode" placeholder="PIN Code">
+
+<p class="note">
+Payment Method: <b>Prepaid Only</b>
+</p>
+
+<button class="btn" onclick="placeOrder()">
+Place Order
+</button>
+
+</div>
+
+<script>
+function placeOrder(){
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let address=document.getElementById("address").value;
+let landmark=document.getElementById("landmark").value;
+let city=document.getElementById("city").value;
+let pin=document.getElementById("pincode").value;
+
+let msg=`🛍️ *New Order - Lorvien Parfums*
+
+Product: Noir Essence
+Price: ₹499
+
+Name: ${name}
+Phone: ${phone}
+
+Address:
+${address}
+
+Landmark:
+${landmark}
+
+City:
+${city}
+
+PIN:
+${pin}
+
+Payment: Prepaid Only`;
+
+window.open("https://wa.me/917994008075?text="+encodeURIComponent(msg));
+}
+</script>
+
+</body>
+</html>
