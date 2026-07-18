@@ -148,3 +148,52 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center
+/* PRODUCT ANIMATIONS */
+
+.product-slide{
+    transition:transform .4s ease, opacity .4s ease;
+}
+
+.product-slide img{
+    transition:transform .4s ease;
+}
+
+.product-slide:hover img{
+    transform:scale(1.05);
+}
+
+.product-slide h2{
+    margin-top:10px;
+    letter-spacing:1px;
+}
+
+.product-slide p{
+    max-width:320px;
+    line-height:1.7;
+}
+
+.product-slide .hero-btn{
+    margin-top:15px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.product-slide img{
+    width:220px;
+}
+
+.product-slide h2{
+    font-size:34px;
+}
+
+.product-slide span{
+    font-size:24px;
+}
+
+}
