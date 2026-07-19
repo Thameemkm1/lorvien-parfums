@@ -373,3 +373,40 @@ body{
 @media(max-width:768px){
 
 }
+
+   /* Mobile */
+@media (max-width: 768px){
+
+    .feature-grid{
+        display:flex;
+        overflow-x:auto;
+        gap:18px;
+        flex-wrap:nowrap;
+        scrollbar-width:none;
+    }
+
+    .feature-grid::-webkit-scrollbar{
+        display:none;
+    }
+
+    .feature-card{
+        flex:0 0 280px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 769px){
+
+    .feature-grid{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:24px;
+        overflow:visible;
+    }
+
+    .feature-card{
+        min-width:0;
+    }
+
+}
