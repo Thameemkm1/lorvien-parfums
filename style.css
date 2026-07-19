@@ -51,6 +51,14 @@ body{
     color:#777;
 }
 
+.hero img{
+    width:100%;
+    aspect-ratio:5/4;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+
 .menu-btn{
     position:absolute;
     right:20px;
