@@ -88,11 +88,14 @@ body{
 /* HERO */
 
 .hero{
-    padding:120px 24px 80px;
+    min-height:100vh;
+    background:url("assets/images/hero.png") center center/cover no-repeat;
     display:flex;
     flex-direction:column;
+    justify-content:flex-start;
     align-items:center;
     text-align:center;
+    padding:120px 20px 40px;
 }
 
 .hero-subtitle{
