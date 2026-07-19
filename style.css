@@ -94,7 +94,15 @@ body{
 }
 
 /* HERO */
-
+.hero{
+    min-height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+}
 
 .hero-subtitle{
     text-transform:uppercase;
@@ -108,32 +116,26 @@ body{
     font-family:'Cormorant Garamond',serif;
     font-size:56px;
     line-height:1.1;
-    margin-bottom:20px;
+    margin:20px auto;
+    text-align:center;
 }
 
 .hero p{
     color:#666;
     max-width:500px;
     line-height:1.8;
-}
-
-.hero img{
-    width:100%;
-    aspect-ratio:5/4;
-    object-fit:cover;
-    object-position:center;
-    display:block;
+    text-align:center;
+    margin:0 auto;
 }
 
 .hero-btn{
     display:inline-block;
-    margin-top:30px;
+    margin:30px auto 0;
     padding:15px 34px;
     background:#111;
     color:#fff;
     text-decoration:none;
     border-radius:999px;
-    transition:.3s;
 }
 
 .hero-btn:hover{
