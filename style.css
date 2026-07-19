@@ -495,3 +495,40 @@ body{
 .faq-item.active .faq-answer{
     display:block;
 }
+
+/* Contact */
+
+.contact{
+    padding:80px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+.contact p{
+    color:#666;
+    margin:15px 0 35px;
+}
+
+.contact-links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:350px;
+    margin:auto;
+}
+
+.contact-links a{
+    text-decoration:none;
+    color:#111;
+    background:#fafafa;
+    border:1px solid #e5e5e5;
+    padding:18px;
+    border-radius:14px;
+    transition:.3s;
+}
+
+.contact-links a:hover{
+    background:#111;
+    color:#fff;
+}
+   
