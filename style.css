@@ -53,15 +53,15 @@ body{
 
 .hero-image{
     width:100vw;
-    margin:40px calc(50% - 50vw) 0;
+    margin:30px calc(50% - 50vw) 0;
 }
 
 .hero-image img{
     width:100%;
-    display:block;
-    aspect-ratio:5/4;
+    height:320px;
     object-fit:cover;
     object-position:center;
+    display:block;
 }
 
 .menu-btn{
