@@ -53,7 +53,7 @@ body{
 
 .hero-image{
     width:100vw;
-    margin:30px calc(50% - 50vw) 0;
+    margin:60px calc(50% - 50vw) 0;
 }
 
 .hero-image img{
