@@ -335,10 +335,12 @@ body{
     display:flex;
     gap:18px;
     overflow-x:auto;
+    overflow-y:hidden;
+    flex-wrap:nowrap;
     scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch;
     scrollbar-width:none;
-    padding-bottom:10px;
+    padding:10px 0;
 }
 
 .feature-grid::-webkit-scrollbar{
@@ -346,28 +348,21 @@ body{
 }
 
 .feature-card{
-    min-width:260px;
-    flex-shrink:0;
+    flex:0 0 280px;
     scroll-snap-align:start;
 
     background:#fff;
     border:1px solid #eee;
     border-radius:20px;
 
-    padding:24px 20px;
+    padding:30px 20px;
     text-align:center;
-
-    transition:.3s;
-}
-
-.feature-card:hover{
-    transform:translateY(-5px);
 }
 
 .feature-card h3{
     font-family:'Cormorant Garamond',serif;
-    font-size:26px;
-    margin-bottom:10px;
+    font-size:30px;
+    margin-bottom:12px;
 }
 
 .feature-card p{
