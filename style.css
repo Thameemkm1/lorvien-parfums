@@ -458,4 +458,40 @@ body{
     font-weight:600;
     font-size:14px;
 }
-   
+   /* FAQ */
+
+.faq{
+    padding:80px 20px;
+    background:#fafafa;
+}
+
+.faq-item{
+    max-width:700px;
+    margin:15px auto;
+    border:1px solid #e5e5e5;
+    border-radius:14px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.faq-question{
+    width:100%;
+    background:#fff;
+    border:none;
+    padding:20px;
+    text-align:left;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 20px 20px;
+    color:#666;
+    line-height:1.7;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
