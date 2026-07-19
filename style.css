@@ -59,6 +59,21 @@ body{
     display:block;
 }
 
+.hero-image{
+    width:100%;
+    max-width:900px;
+    margin:40px auto 0;
+}
+
+.hero-image img{
+    width:100%;
+    aspect-ratio:5/4;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    border-radius:24px;
+}
+
 .menu-btn{
     position:absolute;
     right:20px;
