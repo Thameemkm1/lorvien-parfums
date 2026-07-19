@@ -332,19 +332,31 @@ body{
 }
 
 .feature-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
-    max-width:700px;
-    margin:auto;
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding-bottom:10px;
+}
+
+.feature-grid::-webkit-scrollbar{
+    display:none;
 }
 
 .feature-card{
+    min-width:260px;
+    flex-shrink:0;
+    scroll-snap-align:start;
+
     background:#fff;
     border:1px solid #eee;
     border-radius:20px;
-    padding:24px 18px;
+
+    padding:24px 20px;
     text-align:center;
+
     transition:.3s;
 }
 
@@ -364,9 +376,5 @@ body{
 }
 
 @media(max-width:768px){
-
-    .feature-grid{
-        grid-template-columns:1fr;
-    }
 
 }
