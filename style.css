@@ -532,3 +532,26 @@ body{
     color:#fff;
 }
    
+/* Policy Pages */
+
+.page-header{
+    padding:120px 20px 40px;
+    text-align:center;
+}
+
+.policy-page{
+    max-width:800px;
+    margin:auto;
+    padding:0 20px 80px;
+}
+
+.policy-page h2,
+.policy-page h3{
+    margin-top:35px;
+}
+
+.policy-page p{
+    color:#555;
+    line-height:1.9;
+}
+   
