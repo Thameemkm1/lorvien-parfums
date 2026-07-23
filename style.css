@@ -620,3 +620,35 @@ body{
     color:#777;
 }
    
+/* Announcement Bar */
+
+.announcement-bar{
+    width:100%;
+    background:#c62828;   /* Same red style as the screenshot */
+    color:#fff;
+    overflow:hidden;
+    white-space:nowrap;
+    height:38px;
+    display:flex;
+    align-items:center;
+}
+
+.announcement-track{
+    display:inline-flex;
+    gap:24px;
+    padding-left:100%;
+    animation:marquee 18s linear infinite;
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
