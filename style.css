@@ -848,12 +848,11 @@ body{
 .product-track:hover{
     animation-play-state:paused;
 }
-
 @keyframes scrollProducts{
     from{
         transform:translateX(0);
     }
     to{
-        transform:translateX(-50%);
+        transform:translateX(calc(-240px * 4));
     }
-   }
+}
