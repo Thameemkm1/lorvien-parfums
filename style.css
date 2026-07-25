@@ -375,23 +375,20 @@ body{
 }
 
    /* Mobile */
-@media (max-width: 768px){
+@media (max-width:768px){
 
-    .feature-grid{
-        display:flex;
-        overflow-x:auto;
-        gap:18px;
-        flex-wrap:nowrap;
-        scrollbar-width:none;
-    }
+.product-card{
+    width:170px;
+    padding:15px;
+}
 
-    .feature-grid::-webkit-scrollbar{
-        display:none;
-    }
+.product-card img{
+    height:170px;
+}
 
-    .feature-card{
-        flex:0 0 280px;
-    }
+.product-track{
+    gap:15px;
+}
 
 }
 
