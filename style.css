@@ -853,3 +853,60 @@ body{
         transform:translateX(calc(-240px * 4));
     }
 }
+
+   /* PRELOADER */
+
+#preloader{
+    position:fixed;
+    inset:0;
+    background:#071d17;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:opacity .8s ease, visibility .8s ease;
+}
+
+#preloader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-bottle{
+    width:180px;
+    animation:rotateBottle 2.5s ease-in-out infinite;
+    filter:drop-shadow(0 0 25px rgba(212,175,55,.5));
+}
+
+.loader-content h1{
+    margin-top:20px;
+    color:#D4AF37;
+    letter-spacing:8px;
+    font-size:34px;
+}
+
+.loader-content p{
+    color:#ffffff;
+    letter-spacing:6px;
+    font-size:14px;
+}
+
+@keyframes rotateBottle{
+
+    0%{
+        transform:rotateY(0deg) scale(.9);
+    }
+
+    50%{
+        transform:rotateY(180deg) scale(1);
+    }
+
+    100%{
+        transform:rotateY(360deg) scale(.9);
+    }
+
+}
