@@ -79,3 +79,17 @@ slides.addEventListener("touchend", (e) => {
 
 // Initialize
 showSlide(0);
+
+// PRELOADER
+
+window.addEventListener("load", () => {
+
+    const preloader = document.getElementById("preloader");
+
+    setTimeout(() => {
+
+        preloader.classList.add("hide");
+
+    }, 2500);
+
+});
